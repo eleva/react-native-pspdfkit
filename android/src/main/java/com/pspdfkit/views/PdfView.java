@@ -192,7 +192,7 @@ public class PdfView extends FrameLayout {
         });
 
         // Set a default configuration.
-        configuration = new PdfActivityConfiguration.Builder(getContext()).build();
+        configuration = new PdfActivityConfiguration.Builder(getContext()).hideNavigationButtons().build();
 
         // Generate an id to set on all fragments created by the PdfView.
         internalId = View.generateViewId();
