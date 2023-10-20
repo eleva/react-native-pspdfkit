@@ -159,6 +159,8 @@ public class ConfigurationAdapter {
         boolean hasConfiguration = iterator.hasNextKey();
         this.configuration = new PdfActivityConfiguration.Builder(context);
         this.configuration.disableContentEditing();
+        /* Customization LSE: disable arrow button that permit to navigate previous page on thumbnail's pages */
+        this.configuration.hideNavigationButtons();
         if (hasConfiguration) {
             String key;
 
